@@ -154,3 +154,182 @@ footer {
 		background-color: rgba(0, 0, 0, 0.02);
 	}
 }
+
+/*  */
+/* Стили для футера */
+footer {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 320px) {
+	.footer-brand span {
+		font-size: 1.1rem;
+	}
+
+	.footer-brand img {
+		width: 40px;
+		height: 40px;
+	}
+
+	footer .col-6 {
+		width: 50%;
+	}
+
+	footer h5 {
+		font-size: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	footer li {
+		margin-bottom: 0.5rem !important;
+	}
+
+	footer .small {
+		font-size: 0.8rem;
+	}
+
+	.social-icon {
+		margin-right: 0.75rem !important;
+	}
+
+	footer .btn-sm {
+		padding: 0.25rem 0.5rem;
+		font-size: 0.8rem;
+	}
+}
+
+/* Адаптивность для средних экранов */
+@media (min-width: 321px) and (max-width: 375px) {
+	.footer-brand span {
+		font-size: 1.2rem;
+	}
+
+	footer .col-6 {
+		width: 50%;
+	}
+
+	footer h5 {
+		font-size: 1.1rem;
+	}
+}
+
+/* Для планшетов */
+@media (max-width: 768px) {
+	footer .row > div {
+		margin-bottom: 2rem;
+	}
+
+	footer .col-6 {
+		margin-bottom: 1.5rem;
+	}
+
+	.footer-brand {
+		text-align: center;
+	}
+
+	footer .social-links {
+		justify-content: center;
+		display: flex;
+	}
+}
+
+/* Эффекты при наведении */
+.hover-primary {
+	transition: all 0.2s ease;
+	opacity: 0.8;
+}
+
+.hover-primary:hover {
+	color: #0d6efd !important;
+	opacity: 1;
+	padding-left: 5px;
+}
+
+.social-icon {
+	display: inline-flex;
+	align-items: center;
+	transition: all 0.3s ease;
+	opacity: 0.7;
+	padding: 5px 8px;
+	border-radius: 5px;
+}
+
+.social-icon:hover {
+	opacity: 1;
+	background-color: rgba(255, 255, 255, 0.1);
+	transform: translateY(-2px);
+}
+
+/* Кнопка "Наверх" */
+.btn-outline-light:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Контактные ссылки */
+footer a.text-white {
+	transition: color 0.2s ease;
+}
+
+footer a.text-white:hover {
+	color: #80bdff !important;
+}
+
+/* Разделитель */
+footer hr {
+	opacity: 0.2;
+}
+
+/* Для очень маленьких экранов (280px и меньше) */
+@media (max-width: 280px) {
+	.footer-brand span {
+		font-size: 1rem;
+		display: block;
+		margin-top: 5px;
+	}
+
+	.footer-brand img {
+		width: 35px;
+		height: 35px;
+	}
+
+	footer .col-6 {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
+	.social-icon span {
+		display: none;
+	}
+
+	footer .btn-sm span {
+		display: none;
+	}
+
+	footer .btn-sm i {
+		margin: 0;
+	}
+}
+
+/* Улучшение читаемости на всех устройствах */
+footer p,
+footer li,
+footer a {
+	line-height: 1.6;
+}
+
+/* Анимация появления футера при загрузке */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+footer {
+	animation: fadeInUp 0.6s ease-out;
+}
