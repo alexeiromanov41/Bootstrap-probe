@@ -85,13 +85,17 @@ footer {
 	}
 
 	.dropdown-menu {
-		min-width: 220px;
+		max-width: 90%;
 	}
-}
 
-.navbar-brand img {
-	width: 60px;
-	height: 60px;
+	.dropdown-item {
+		font-size: 0.9rem;
+	}
+
+	.navbar-brand img {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 /* Адаптивность для 492px и выше */
