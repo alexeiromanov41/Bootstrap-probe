@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css\style.css?v=111" />
+	</head>
+	<body class="bs-co">
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-expand-lg bg-body-tertiary">
+					<div class="container-fluid">
+						<!-- Логотип и название компании -->
+						<a class="navbar-brand d-flex align-items-center" href="#">
+							<img
+								src="img/Arcus logo.svg"
+								alt="Логотип"
+								width="200"
+								height="100"
+								class="d-inline-block align-text-top me-2 rounded"
+							/>
+							<span class="fw-bold">АРКУС Технологии</span>
+						</a>
+
+						<!-- Кнопка бургер-меню для мобильных -->
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+						>
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<!-- Навигационное меню -->
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link" aria-current="page" href="#">
+										<i class="bi bi-house-door me-1"></i>Главная
+									</a>
+								</li>
+								<!-- Выпадающее меню "Продукция" -->
+								<li class="nav-item dropdown">
+									<a
+										class="nav-link dropdown-toggle"
+										href="#"
+										role="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<i class="bi bi-box-seam me-1"></i>Продукция
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<a class="dropdown-item" href="#">
+												<i class="bi bi-cpu me-2"></i>Станки лазерной резки
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<i class="bi bi-tools me-2"></i>Аппарат ручной лазерной
+												чистки
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<i class="bi bi-box me-2"></i>Аппарат ручной лазерной
+												сварки
+											</a>
+										</li>
+										<li><hr class="dropdown-divider" /></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="bi bi-briefcase me-1"></i>Услуги
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="bi bi-images me-1"></i>Портфолио
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<i class="bi bi-telephone me-1"></i>Контакты
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
